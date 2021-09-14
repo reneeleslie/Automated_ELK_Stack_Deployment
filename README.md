@@ -26,19 +26,18 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly efficient, in addition to restricting access to the network.
 Load balancers protect against DDos attacks by distributing incoming traffic to multiple servers. A jump box is able to streamline maintenance of a system by only having to update the jumpbox. 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____. 
+Filebeat watches for log files to see 
 - _TODO: What does Metricbeat record?_
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Name                       | Function       | IP Address | Operating System |
+|----------------------------|----------------|------------|------------------|
+| Jump-Box-Provisioner       | Gateway        | 10.0.0.7   | Linux            |
+| Web-1                      | Server         | 10.0.0.7   | Linux            |
+| USEME-Web-2                | Server         | 10.0.0.9   | Linux            |
+| ELK-server                 | ELK Server     | 10.1.0.4   | Linux            |
 
 ### Access Policies
 
