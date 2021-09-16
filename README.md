@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 https://github.com/reneeleslie/Automated_ELK_Stack_Deployment/blob/main/draft%20Network%20Diagram.jpg
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible file may be used to install only certain pieces of it, such as Filebeat.
 
 https://github.com/reneeleslie/Automated_ELK_Stack_Deployment/blob/main/filebeat%20playbook
 https://github.com/reneeleslie/Automated_ELK_Stack_Deployment/blob/main/metricbeat%20playbook
@@ -27,9 +27,9 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly efficient, in addition to restricting access to the network.
 Load balancers protect against DDos attacks by distributing incoming traffic to multiple servers. A jump box is able to streamline maintenance of a system by only having to update the jumpbox. 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____. 
-Filebeat watches for log files to see 
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file system and system metrics. 
+Filebeat is an agent that is installed on your servers to monitor log files by centralizing log files and forwards them.   
+Metricbeat monitors the metrics of a device or application. For example, metricbeat can be utilized to monitor memory and usage. 
 
 The configuration details of each machine may be found below.
 
