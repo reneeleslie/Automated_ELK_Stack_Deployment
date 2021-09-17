@@ -36,7 +36,7 @@ The configuration details of each machine may be found below.
 | Name                       | Function       | IP Address | Operating System |
 |----------------------------|----------------|------------|------------------|
 | Jump-Box-Provisioner       | Gateway        | 10.0.0.7   | Linux            |
-| Web-1                      | Server         | 10.0.0.7   | Linux            |
+| Web-1                      | Server         | 10.0.0.6   | Linux            |
 | USEME-Web-2                | Server         | 10.0.0.9   | Linux            |
 | ELK-server                 | ELK Server     | 10.1.0.4   | Linux            |
 
@@ -54,9 +54,9 @@ A summary of the access policies in place can be found in the table below.
 
 | Name                 | Publicly Accessible | Allowed IP Addresses |
 |----------            |---------------------|----------------------|
-| Jump-Box-Provisioner | Yes                 |     |
-|          |                     |                      |
-|          |                     |                      |
+| Jump-Box-Provisioner | No                 | My public IP 76.88.88.88.21 on SSH 22                    |
+| Web-1 & USEME-Web-2  | No                 |  10.0.0.7 SSH on port 22 |
+| ELK server           | No                 |  My public IP 76.88.88.21 on HTTP port 80   |
 
 ### Elk Configuration
 
